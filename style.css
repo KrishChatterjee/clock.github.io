@@ -1,0 +1,253 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Rashi+Hebrew:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+html {
+  height: 100%;
+  width: 100%;
+}
+*{
+  margin:0;
+  padding:0;
+}
+#navbar{
+  display: flex;
+  background-color: grey;
+  border-radius: 10px;
+  height: 30px;
+    width: 100%;
+    align-items: center;
+}
+  
+#navbar li{
+  
+  color:white;
+  list-style:none;
+  padding: 0 24px;
+  
+}
+#navbar li a{
+  display: block;
+  text-decoration: none;
+  color: black;
+}
+.container{
+  position:relative;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.container #outer-clock{
+  position:absolute;
+  height: 300px;
+  width: 300px;
+  background: #b0a8a6;/*   #803414; */
+  border: 7px solid black;
+  border-radius: 50%;
+  display: flex;
+  box-shadow: 5px 9px 9px 1px #68686a
+  
+}
+.container #inner-clock{
+  position:absolute;
+  height: 300px;
+  width: 300px;
+  background: #f2f2f2;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+}
+.container #dot{
+  position:absolute;
+      height: 20px;
+    width: 20px;
+  background: #000000;/*   #803414; */
+  border-radius: 50%;
+  display: flex;
+  z-index: 5;
+  
+}
+#inner-clock #min-hand{
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    height: 40%;
+    width: 5px;
+    background-color: black;
+    border-radius: 5px;
+    transform-origin: bottom;
+    transform: rotate(0deg);
+}
+#inner-clock #hr-hand{
+   position: absolute;
+    left: 50%;
+    bottom: 50%;
+    height: 25%;
+    width: 7px;
+    background-color: black;
+    border-radius: 5px;
+    transform-origin: bottom;
+    transform: rotate(0deg);
+  
+}
+
+#inner-clock #sec-hand{
+   position: absolute;
+    left: 50%;
+    bottom: 50%;
+    height: 30%;
+    width: 2px;
+    background-color: black;
+    border-radius: 5px;
+    transform-origin: bottom;
+    transform: rotate(0deg);
+  
+}
+
+#outer-clock #twelve{
+position: absolute;
+    top: 0;
+    left:47%;
+  z-index: 5;
+  font-family:Noto Rashi Hebrew;
+  font-size: larger;
+   text-decoration: none;
+    color: black;
+}
+#outer-clock #nine{
+position: absolute;
+    top: 47%;
+    left: 0;
+   z-index: 5;
+  font-family:Noto Rashi Hebrew;
+  font-size: larger;
+   text-decoration: none;
+    color: black;
+  
+}
+#outer-clock #three{
+position: absolute;
+  top: 47%;
+  right: 0;
+  z-index: 5;
+  font-family:Noto Rashi Hebrew;
+  font-size: larger;
+   text-decoration: none;
+    color: black;
+}
+#outer-clock #six{
+    position: absolute;
+    top: 94%;
+    right: 47%;
+    z-index: 5;
+    font-family: Noto Rashi Hebrew;
+  font-size: larger;
+   text-decoration: none;
+    color: black;
+}
+#outer-clock #one{
+  position: absolute;
+    top: 6%;
+    right: 25%;
+    z-index: 5;
+    font-family: Noto Rashi Hebrew;
+    font-weight: bold;
+   text-decoration: none;
+    color: black;
+    transform: rotate(30deg);
+}
+#outer-clock #two{
+position: absolute;
+    top: 23%;
+    right: 8%;
+    z-index: 5;
+    font-family: Noto Rashi Hebrew;
+    font-weight: bold;
+   text-decoration: none;
+    color: black;
+    transform: rotate(60deg);
+}
+#outer-clock #four{
+      position: absolute;
+    bottom: 24%;
+    right: 8%;
+    z-index: 5;
+    font-family: Noto Rashi Hebrew;
+    font-weight: bold;
+    transform: rotate(120deg);
+   text-decoration: none;
+    color: black;
+}
+#outer-clock #five{
+    position: absolute;
+    bottom: 6%;
+    right: 25%;
+    z-index: 5;
+    font-family: Noto Rashi Hebrew;
+    font-weight: bold;
+    transform: rotate(150deg);
+   text-decoration: none;
+    color: black;
+}
+#outer-clock #seven{
+    position: absolute;
+    bottom: 6%;
+    left: 25%;
+    z-index: 5;
+    font-family: Noto Rashi Hebrew;
+    font-weight: bold;
+    transform: rotate(210deg);
+   text-decoration: none;
+    color: black;
+}
+#outer-clock #eight{
+    position: absolute;
+    bottom: 24%;
+    left: 8%;
+    z-index: 5;
+    font-family: Noto Rashi Hebrew;
+    font-weight: bold;
+    transform: rotate(240deg);
+   text-decoration: none;
+    color: black;
+}
+#outer-clock #ten{
+    position: absolute;
+    top: 23%;
+    left: 8%;
+    z-index: 5;
+    font-family: Noto Rashi Hebrew;
+    font-weight: bold;
+    transform: rotate(120deg);
+   text-decoration: none;
+    color: black;
+}
+#outer-clock #eleven{
+    position: absolute;
+     top: 6%;
+    left: 25%;
+    z-index: 5;
+    font-family: Noto Rashi Hebrew;
+    font-weight: bold;
+    transform: rotate(150deg);
+   text-decoration: none;
+    color: black;
+}
+.box{
+  height: 200px;
+    width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+#box #time{
+  font-family: 'Poppins', sans-serif;
+  
+}
